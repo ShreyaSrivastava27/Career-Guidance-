@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "logininfo";
+    Layout = "~/Views/Shared/third.cshtml";
+}
+
+<table border="1" style="width: 100%;">
+            <tr style="font-size:22px;background:#ffd800;color:white;">
+                <th>
+                   Userid
+                </th>
+                <th>
+                    UserType
+                </th>
+                <th>
+                    Delete
+                </th>
+                
+                
+            </tr>
+      @using spicarrierguideness.Models
+    @{
+        ConnectionManager cm = new ConnectionManager();
+        string command = "select * from tbl_login";
+                System.Data.DataTable dt = cm.GetBulkRecord(command);
+                if(dt.Rows.Count>0)
+                {
+                    for(int i=0;i<dt.Rows.Count;i++)
+                    {
+                         <tr>
+                <td>@dt.Rows[i][0].ToString()</td>
+                             <td>@dt.Rows[i][2]</td>
+                
+                 
+                                                         <td><a href="/admin/deletel?dt=@dt.Rows[i][0].ToString()">Click</a></td>
+            </tr>
+                    }
+                }
+    }
+    </table>

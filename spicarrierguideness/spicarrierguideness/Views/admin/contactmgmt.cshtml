@@ -1,0 +1,51 @@
+﻿@{
+    ViewBag.Title = "contactmgmt";
+    Layout = "~/Views/Shared/third.cshtml";
+}
+
+<table border="1" style="width: 100%;">
+            <tr style="font-size:22px;background:#ffd800;color:white;">
+                <th>
+                    Name
+                </th>
+                <th>
+                    Address
+                </th>
+                <th>
+                    Mobileno.
+                </th>
+                <th>
+                    Message
+                </th>
+                <th>
+                    Registration date
+                </th>
+                <th>
+                    Delete
+                </th>
+                
+            </tr>
+    @using spicarrierguideness.Models
+            @{
+                ConnectionManager cm = new ConnectionManager();
+                string command = "select * from tbl_contact";
+                System.Data.DataTable dt = cm.GetBulkRecord(command);
+                if(dt.Rows.Count>0)
+                {
+                    for(int i=0;i<dt.Rows.Count;i++)
+                    {
+                         <tr>
+                <td>@dt.Rows[i][0].ToString()</td>
+                <td>@dt.Rows[i][1]</td>
+
+                <td>@dt.Rows[i][2]</td>
+                 <td>@dt.Rows[i][3]</td>        
+                             <td>@dt.Rows[i][4]</td> 
+                      <td><a href="/admin/deletec?dt=@dt.Rows[i][2].ToString()">Click</a></td>
+            </tr>
+                    }
+                }
+                   }
+
+    </table>
+

@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "login";
+    Layout = "~/Views/Shared/general.cshtml";
+}
+@*<div class="row">
+    <div class="col-sm-12" style="min-height:30px;"></div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <div class="row">
+            <img src="~/Content/Untitled.png" /style="height:350px;width:100%;">
+        </div>
+    </div>
+</div><br/>*@
+<div class="row" style="margin-top:50px;">
+    
+<center><span style="color:#ef5252;text-shadow:3px 3px 3px black;font-family:Comic Sans MS;font-size:40px;text-align:center;background:white;opacity:0.8;border-bottom:2px solid black;">
+    Login Here
+<span class="fa  fa-hand-o-down"style="text-shadow:0px 0px 0px;"></span></span></center></div>
+<div class="row" style="margin-top:100px;">
+    <div class="col-sm-3"></div>
+    <form action="/Home/login" method="post">
+    <div class="col-sm-6 l" style="opacity:0.8;background:#efde55;box-shadow:8px 8px 8px #ef5252;">
+        <span class="lt">User id</span>
+        <div class="input-group">
+             <span class="input-group-addon" id="basic-addon1"style="background:orange;color:white;"><span class="fa fa-user"></span></span>
+        <input type="text" placeholder="Enter Userid"class="form-control" aria-describedby="basic-addon1"name="txtuserid"required=""/>
+            </div>
+        <span class="lt">Password</span>
+        
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon2"style="background:orange;color:white;"><span class="fa fa-lock"></span></span>
+        <input type="password" class="form-control" aria-describedby="basic-addon1"placeholder="Password"name="txtpass"required=""/>
+            </div>
+            <br />
+        <span style="color:#ff6a00;font-size:20px;" >Welcome in next zone</span><br /><br />
+        <button type="submit" class="btn btn-success form-control">Login</button>
+    </div></form>
+    <div class="col-sm-3"></div>
+</div>

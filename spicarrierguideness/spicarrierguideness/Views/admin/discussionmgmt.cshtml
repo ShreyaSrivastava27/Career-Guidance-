@@ -1,0 +1,69 @@
+﻿@{
+    ViewBag.Title = "discussionmgmt";
+    Layout = "~/Views/Shared/third.cshtml";
+}
+
+<div class="row">
+    <div class="col-sm-6"style="min-height:300px;background:#0ff;">
+        <table border="1" style="width: 100%;">
+            <tr style="font-size:22px;background:#ffd800;color:white;">
+                <th>
+                    Ques id
+                </th>
+                <th>
+                   Question
+                </th>
+                <th>
+                    Question By
+                </th>
+                <th>
+                    Question Date
+                </th>
+</tr>
+              @using spicarrierguideness.Models
+    @{
+        ConnectionManager cm = new ConnectionManager();
+        string command = "select * from tbl_question";
+                System.Data.DataTable dt = cm.GetBulkRecord(command);
+                if(dt.Rows.Count>0)
+                {
+                    for(int i=0;i<dt.Rows.Count;i++)
+                    {
+                         <tr>
+                <td>@dt.Rows[i][0].ToString()</td>
+                <td>@dt.Rows[i][1]</td>
+
+                <td>@dt.Rows[i][2]</td>
+                             <td>@dt.Rows[i][3]</td>
+                 
+                                                         @*<td><a href="/admin/delete?dt=@dt.Rows[i][2].ToString()">Click</a></td>*@
+            </tr>
+                    }
+                }
+    }
+
+        </table>
+    </div>
+    <div class="col-sm-6"style="min-height:300px;background:#808080;">
+                <table border="1" style="width: 100%;">
+            <tr style="font-size:22px;background:#ffd800;color:white;">
+                <th>
+                   Ans id
+                </th>
+                <th>
+                    Ques id
+                </th>
+                <th>
+                    Answer
+                </th>
+                <th>
+                    Answer By
+                </th>
+                <th>
+                    Answer Date
+                </th>
+</tr></table></div>
+                             
+                
+    
+</div>

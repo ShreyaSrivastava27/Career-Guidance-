@@ -1,0 +1,201 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/hover-min.css" rel="stylesheet" />
+    <link href="~/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/Softpro Logo.png" rel="icon" />
+    <script src="~/js/jquery.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <style>
+        .footer {
+             min-height:150px;
+    background:black;
+    color:white;
+    text-align:center;
+        }
+        .d1 {
+            min-height:220px;
+            border:2px solid black;
+            margin:40px;
+            
+        }
+                .d2 {
+            min-height:220px;
+            border:2px solid black;
+                 margin:40px;      
+            
+        }
+                        .d3 {
+            min-height:220px;
+            border:2px solid black;
+                 margin:40px;      
+                 
+        }
+                        .dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+   
+    </style>
+</head>
+<body style="background:url('../Content/imagesl/dashback.jpg');
+            background-attachment:fixed;
+            background-size:cover;">
+    <div class="container-fluid">
+
+        
+            <div class="row" style="min-height:150px;background:white;">
+                <div class="col-sm-2">
+                    <img src="~/Content/Softpro%20Logo.png"style="height:150px;width:100%;" />
+                </div>
+                <div class="col-sm-8"style="text-align:center;font-size:50px;font-family:'Times New Roman';padding-top:10px;color:red;text-shadow:2px 2px 2px black;">
+                    Softpro India Career Guidance
+                </div>
+                <div class="col-sm-2" style="padding-top:20px;">
+                   <a href="/User/Myprofile"><img src="@ViewBag.profile "style="height:100px;width:100px;border:1px solid red;border-radius:50%;" /></a> 
+                </div>
+            </div>
+    
+        <div class="row">
+            <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/User/Myprofile">Hello !
+          <span style="font-size:25px;color:#f35757;font-family:'Monotype Corsiva';">@ViewBag.nm</span>
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+     
+      <ul class="nav navbar-nav navbar-right"style="border-bottom:1px solid red;border-top:1px solid red;">
+        <li><a href="/User/Index"style="color:orange;"class="hvr-shadow">Dashboard</a></li>
+          <li><a href="/User/whatsnew"style="color:orange;"class="hvr-shadow">What's new</a></li>
+                    <li><a href="/User/discussion"style="color:orange;"class="hvr-shadow">Discussion Board</a></li>
+          <li><a href="/User/Feedback"style="color:orange;"class="hvr-shadow">Feedback</a></li>
+      <li class="dropdown">
+    <a class=" dropdown-toggle hvr-shadow" href="#" data-toggle="dropdown"style="color:orange;">Streams
+    <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      <li><a tabindex="-1" href="/User/commerce">Commerce</a></li>
+      <li><a tabindex="-1" href="/User/arthumanitie">Art & Humanitie</a></li>
+      <li class="dropdown-submenu">
+        <a class="test" tabindex="-1" href="#">Science<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a tabindex="-1" href="/User/pcb">PCB</a></li>
+          <li><a tabindex="-1" href="/User/pcm">PCM</a></li>
+         
+        </ul>
+      </li>
+    </ul>
+  </li>
+
+          <li><a href="#"style="color:orange;"class="hvr-shadow">Live Chating</a></li>
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle hvr-shadow" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"style="color:orange;">
+              After Graduation
+               <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/User/pvtsevt">Private Sect. </a></li>
+            <li><a href="/User/govtsect">Govt. Sect.</a></li>
+            
+          </ul>
+        </li>
+                    <li class="dropdown">
+          <a href="#" class="dropdown-toggle hvr-shadow" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"style="color:orange;">
+              Setting
+               <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/User/Myprofile">My Profile </a></li>
+            <li><a href="/User/changepassword">Change Password</a></li>
+            <li><a href="/User/logout">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 d1 hvr-float-shadow"style="margin-left:90px;">
+                <div class="row">
+               <a href="/User/whatsnew"><img src="~/Content/imagesl/bbackwhat.jpg" style="height:220px;width:100%;"title="Latest news of Career"/></a> 
+                    </div>
+            </div>
+            <div class="col-sm-3 d2 hvr-shrink">
+                <div class="row">
+               <a href="/User/discussion"><img src="~/Content/imagesl/ddd.jpg"style="height:220px;width:100%;"title="Through discussion plan your Career"/></a> 
+                    </div>
+            </div>
+            <div class="col-sm-3 d3 hvr-float-shadow">
+                <div class="row">
+               <a href="/User/commerce"><img src="~/Content/imagesl/bbackdeshcom.jpeg"style="height:220px;width:100%;"title="If you are commerce student click here to see courses and jobs of it" /></a> 
+                    </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 hvr-float-shadow"style="min-height:220px;margin:40px;border:2px solid black;margin-left:90px;">
+                <div class="row">
+              <a href="/User/pcb"><img src="~/Content/imagesl/pcbdesh.jpg" style="height:220px;width:100%;"title="If you are pcb student click here to see the courses and jobs of it"/></a>  
+                    </div>
+            </div>
+            <div class="col-sm-3 hvr-shrink"style="min-height:220px;margin:40px;border:2px solid black;">
+                <div class="row">
+                    <a href="/User/arthumanitie"><img src="~/Content/imagesl/bda.jpg"style="height:220px;width:100%;opacity:0.8;"title="If you are art and humanitie student click here to see the courses and jobs of it" /></a>
+              
+                    </div>
+            </div>
+            <div class="col-sm-3 hvr-float-shadow"style="min-height:220px;margin:40px;border:2px solid black;">
+                <div class="row">
+                <a href="/User/pcm">  <img src="~/Content/imagesl/deshpcm.jpg"style="height:220px;width:100%;opacity:0.8;"title="If you are pcm student click here to see the courses and jobs of it" /></a>
+                    </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-12"style="min-height:50px;background:black;color:white;padding-top:10px;text-align:center;font-family:'Times New Roman';font-size:22px;">
+                copyright &copy; Softpro India Computer Technologies (P) Ltd.
+            </div>
+        </div>
+        @*<div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3 d1"></div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3 d2"></div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3 d3"></div>
+            
+        </div>*@
+        </div>
+    <script>
+        $(document).ready(function () {
+            $('.dropdown-submenu a.test').on("click", function (e) {
+                $(this).next('ul').toggle();
+                e.stopPropagation();
+                e.preventDefault();
+            });
+        });
+</script>
+</body>
+</html>

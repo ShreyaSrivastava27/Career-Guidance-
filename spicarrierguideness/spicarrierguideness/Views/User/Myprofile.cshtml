@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Title = "Myprofile";
+    Layout = "~/Views/Shared/second.cshtml";
+}
+<script>
+$(document).ready(function () {
+            $("#imgProfile").click(function () {
+                $("#fufile").trigger('click');
+            });
+            $("#btnedit").click(function () {
+                var btn = $("#btnedit").val();
+                if (btn == "Edit") {
+                    
+                    var name = $("#txtname").prop("readonly", false);
+                    var email = $("#txtemail").prop("readonly", false);
+                    var mobile = $("#txtmobile").prop("readonly", false);
+                    var address = $("#txtadd").prop("readonly", false);
+                    $("#btnedit").val("Update");
+
+                }
+                else {
+                    $("#btnedit").prop("type", "submit");
+                }
+            })
+        });
+
+    </script>
+<div class="row">
+    <div class="col-sm-12"style="min-height:35px;"></div>
+</div>
+<div class="row">
+    <div class="col-sm-4"></div>
+    <form action="/User/Myprofile" method="post"enctype="multipart/form-data">
+    <div class="col-sm-4"style="min-height:400px;background:grey;border:2px solid;border-radius:5%;">
+        
+        <img id="ImgMain" src="@ViewBag.profile"style="height:110px;width:110px;border-radius:50%;top:-50px;left:calc(50% - 50px);position:absolute;border:2px solid black;" />
+        <img id="imgProfile" src="~/Content/imagesl/cam.png"style="height:45px;width:45px;border-radius:50%;position:absolute;left:40%;top:10px;cursor:pointer;"title="Click here to change profile" />
+         <input type="file"id="fufile"style="display:none;"name="fufile" />
+        <br /><br /><br /><br />
+        <input type="text" class="form-control"name="txtname"style="border:2px solid;"value="@ViewBag.nm"id="txtname"readonly="true" /><br />
+        <input type="text" class="form-control"name="txtemail"style="border:2px solid;"value="@ViewBag.email"id="txtemail"readonly="true"/><br />
+        <input type="text" class="form-control"name="txtmobile"style="border:2px solid;"value="@ViewBag.mob"id="txtmobile"readonly="true" /><br />
+        @*<input type="text" class="form-control"name="txtadd"style="border:2px solid;"value="@ViewBag.add"id="txtadd"readonly="true"/><br />*@
+
+        <textarea class="form-control"name="txtadd"style="border:2px solid;"id="txtadd"readonly="true">@ViewBag.add</textarea><br />
+        <input type="button" class="btn btn-success" style="float:right;width:150px;"value="Edit"id="btnedit" />
+    </div></form>
+    <div class="col-sm-4"></div>
+</div>

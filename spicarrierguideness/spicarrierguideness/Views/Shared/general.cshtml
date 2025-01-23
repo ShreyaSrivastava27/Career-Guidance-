@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/Softpro Logo.png" rel="icon" />
+    <script src="~/js/jquery.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <link href="~/css/hover-min.css" rel="stylesheet" />
+    @*<link href="~/Content/css/style.css" rel="stylesheet" />*@
+    <link href="~/Content/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+         <div class="col-sm-8 header"style="opacity:0.7;background:black;">
+                <div class="input button-group" style="margin-left:60px;">
+                <button type="button" class="btn btn-default btn-sm"style="opacity:0.8;">
+  <span class="fa fa-facebook" aria-hidden="true"></span> 
+</button>
+                <button type="button" class="btn btn-default btn-sm"style="opacity:0.8;">
+  <span class="fa fa-twitter" aria-hidden="true"></span> 
+</button>
+                    <button type="button" class="btn btn-default btn-sm"style="opacity:0.8;">
+  <span class="fa fa-instagram" aria-hidden="true"></span> 
+</button>
+                    <button type="button" class="btn btn-default btn-sm"style="opacity:0.8;">
+  <span class="fa fa-linkedin" aria-hidden="true"></span> 
+</button>
+                    <button type="button" class="btn btn-default btn-sm"style="opacity:0.8;">
+  <span class="fa fa-pinterest" aria-hidden="true"></span> 
+</button>
+                    <button type="button" class="btn btn-default btn-sm"style="opacity:0.8;">
+  <span class="fa fa-google-plus"aria-hidden="true"></span> 
+</button>
+                    
+            </div></div>
+            <div class="col-sm-4" style="min-height: 50px; background: black; padding-top: 9px; background: #d37878; ">
+                
+                
+                    <span class="fa fa-university" aria-hidden="true"></span>
+                   <span style="font-size:20px;padding-top:5px;font-family:'Monotype Corsiva';">A Compny founded by Technocarts from IIT & IET</span> 
+                </div>
+           
+        </div>
+            <div class="row">
+                <div class="col-sm-1 menu"style="background:white;opacity:0.6;">
+                    <div class="row">
+          <a href="/Home/Index"><img src="~/Content/Softpro%20Logo.png"style="height:100px;width:100%;" /></a> </div>
+                </div>
+                <div class="col-sm-11 menu"style="padding-top:20px;">
+                         <div class="row">
+                <nav class="navbar navbar-default"style="background:black;">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      @*<a class="navbar-brand" href="#">Brand</a>*@
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-left">
+        
+       </ul>
+      @*<form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      *@<ul class="nav navbar-nav navbar-right">
+        <li><a href="/Home/Index"style="color:white;font-size:15px;background:grey;">
+            <span class="fa fa-home"></span>
+            Home</a></li>
+          <li><a href="/Home/homem"style="color:white;font-size:15px;">@*<span class="fa fa-user"></span>&nbsp;&nbsp;*@Services</a></li>
+          <li><a href="/Home/registration"style="color:white;font-size:15px;">@*<span class="fa fa-camera"></span>&nbsp;&nbsp;*@New Student Registration</a></li>
+          <li><a href="/Home/enquiryc"style="color:white;font-size:15px;">@*<span class="fa fa-caret-right "></span> *@Enquiry</a></li>
+          <li><a href="/Home/imggal"style="color:white;font-size:15px;">@*<span class="fa fa-caret-right "></span> *@Image Gallery</a></li>
+          <li><a href="/Home/login"style="color:white;font-size:15px;">@*<span class="fa fa-caret-right "></span> *@Login</a></li>
+             </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+                    </div>
+                </div>
+            </div>
+        
+        <div class="row">
+            <div class="col-sm-12" style="min-height:900px;background-image:url('../Content/director.jpeg');background-size:100% 100%;background-attachment:fixed;background-size:cover;">
+                <div class="row">
+                <div class="col-sm-12" style="min-height:900px;background:rgba(255, 255, 255, 0.50);">
+                @RenderBody()
+                </div></div>
+                </div></div>
+            
+        
+
+        <div class="row">
+            
+
+                
+                <div class="col-sm-4" style="background:#3e3a3a; color: white; min-height: 220px; padding-top: 10px; ">
+                  <span style="font-size:30px;font-family:'Times New Roman';">Useful Links</span>  <br />
+                 <a href="/Home/homem"style="color:white;font-family:'Monotype Corsiva';font-size:30px;">Services</a><br />
+                   <a href="/Home/imggal"style="color:white;font-family:'Monotype Corsiva';font-size:30px;">Image Gallery</a> <br />
+                   <a href="/Home/login"style="color:white;font-family:'Monotype Corsiva';font-size:30px;">Login</a> 
+                </div>
+                <div class="col-sm-4" style="background:#3e3a3a; color: white; min-height: 220px; padding-top: 10px; ">
+                   <span style="font-size:30px;">Follow Us on</span> <br />
+                    <a href="#"style="color:white;"><span class="fa fa-google-plus hvr-grow"style="font-size:30px;margin-left:40px;"></span></a> <br />
+                   <a href="#"style="color:white;"><span class="fa fa-twitter hvr-grow"style="font-size:30px;margin-left:40px;"></span></a> <br />
+                   <a href="#"style="color:white;"><span class="fa fa-facebook hvr-grow"style="font-size:30px;margin-left:40px;"></span></a> <br />
+                    <a href="#"style="color:white;"><span class="fa fa-whatsapp hvr-grow"style="font-size:30px;margin-left:40px;"></span></a><br />
+                </div>
+                <div class="col-sm-4" style="background:#3e3a3a; color: white; min-height: 220px; padding-top: 10px; ">
+                    <span style="font-size:30px;">Related Links</span> <br />
+                    <a href="#"style="color:white;font-family:'Monotype Corsiva';font-size:30px;">Softpro India</a><br />
+                    <a href="#"style="color:white;font-family:'Monotype Corsiva';font-size:30px;">Softpro Innovation</a><br />
+                    <a href="#"style="color:white;font-family:'Monotype Corsiva';font-size:30px;">Softpro EstudyZone</a><br />
+                </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-sm-12" style="background:#3e3a3a; color: white; min-height: 20px;font-family:'Times New Roman'; ">
+                <h1 style="font-size:22px;text-align:center;">copyright &copy; Softpro India Computer Technologies (P) Ltd.</h1>
+        </div>
+    </div>
+
+    </div>
+</body>
+</html>

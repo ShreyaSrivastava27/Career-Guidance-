@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Viewans";
+    Layout = "~/Views/Shared/second.cshtml";
+}
+
+@using spicarrierguideness.Models
+@{
+    <div class="row">
+        <div class="col-sm-12">
+            <h1 style="background:grey;color:white;font-size:30px;">Answers are : </h1>
+            <span style="font-size:30px;font-family:'Times New Roman';">
+            @{
+                ConnectionManager c = new ConnectionManager();
+             System.Data.DataTable dt=   c.GetBulkRecord("select * from tbl_answer where qid='" + Request.QueryString["vid"].ToString() + "'");
+             if(dt.Rows.Count>0)  
+             {
+                for(int i=0;i<dt.Rows.Count;i++)
+                {
+                <div>@dt.Rows[i][2].ToString()</div>
+                }
+                }
+                }
+                </span>
+        </div>
+    </div>
+    }

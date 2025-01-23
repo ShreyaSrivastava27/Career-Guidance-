@@ -1,0 +1,23 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Logout</title>
+    <script>
+        function logout() {
+            window.history.forward();
+            window.setTimeout("window.location.href='/Home/Login'", 2000);
+
+        }
+    </script>
+
+</head>
+<body onload="logout()">
+    <h1 style="text-align:center;font-size:21px;margin-top:250px;">Please wait.....</h1>
+</body>
+</html>

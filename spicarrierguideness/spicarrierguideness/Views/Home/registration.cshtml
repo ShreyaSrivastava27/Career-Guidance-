@@ -1,0 +1,137 @@
+﻿@{
+    ViewBag.Title = "registration";
+    Layout = "~/Views/Shared/general.cshtml";
+}
+
+@*<link href="~/Content/css/style.css" rel="stylesheet" />*@
+@*<div class="row">
+    <div class="col-sm-12 "style="min-height:450px;margin-top:20px;">
+        <div class="row">
+        <img src="~/Content/imagesl/keyreg.jpg"style="height:450px;width:100%;" />
+            </div>
+    </div>
+    
+</div><br />*@
+
+
+<script>
+    $(document).ready(function () {
+        $("#txtcpass").focusout(function () {
+            var txtorg = $("#txtpass").val();
+            var txtconfirm = $("#txtcpass").val();
+            if (txtorg == txtconfirm) {
+
+            }
+            else {
+                alert("Plz confirm password ");
+                $("#txtcpass").css("border", "2px solid red");
+             
+            }
+        })
+        //$("#qu").change(function () {
+        //    if ($("#qu").val() == "--Select qualification--") {
+        //        alert("Plz select  qualification ");
+        //    }
+           
+        //})
+    })
+    function DisableCopyPaste(event) {
+        // Message to display
+        var message = "Cntrl key/ Right Click Option disabled";
+        // check mouse right click or Ctrl key press
+        var kCode = event.keyCode || e.charCode;
+       // alert(kCode)
+        //FF and Safari use e.charCode, while IE use e.keyCode
+        if (kCode == 17 || kCode == 2) {
+            alert(message);
+            return false;
+        }
+    }
+</script>
+
+<div class="row" style="margin-top:50px;">
+    
+<center><span style="color:#ef5252;text-shadow:3px 3px 3px black;font-family:Comic Sans MS;font-size:40px;text-align:center;background:white;opacity:0.8;border-bottom:2px solid black;">
+    Register Here
+<span class="fa  fa-hand-o-down"style="text-shadow:0px 0px 0px;"></span></span></center></div>
+<div class="row">
+    <div class="col-sm-12"style="min-height:50px;"></div>
+</div>
+<form action="/Home/registration"method="post" enctype="multipart/form-data">
+    
+<div class="row">
+    <div class="col-sm-2"style="margin-top:50px;"></div>
+    <div class="col-sm-4"style="background:black;box-shadow:0px 0px 0px black;min-height:500px;opacity:0.5;">
+        
+          <span style="color:white;font-family:'Monotype Corsiva';font-size:30px;">Name</span>
+        <input type="text"placeholder="Enter your name"class="form-control"name="txtname"required=""style="font-weight:bold;font-size:18px;color:black;"/>
+        <span style="color:white;font-family:'Monotype Corsiva';font-size:30px;">Qualification</span><br />
+        <select name="txtqualification" class="form-control"style="font-weight:bold;font-size:18px;color:black;" id="qu">
+            <option>--Select qualification--</option>
+            <option>HighSchool</option>
+            <option>Intermidiate</option>
+            <option>Diploma</option>
+            <option>B.tech</option>
+            <option">BCA</option>
+            <option>DCA</option>
+            <option>M.tech</option>
+        </select>
+                 <span style="color:white;font-family:'Monotype Corsiva';font-size:30px;">Emailid</span>
+        <input type="email" placeholder="Enter your emailid" class="form-control"name="txtemail"required=""style="font-weight:bold;font-size:18px;color:black;"/>
+        <span style="color:white;font-family:'Monotype Corsiva';font-size:30px;">Password</span>
+        <input id="txtpass" type="password" class="form-control"name="txtpass" required=""placeholder="Password"style="font-weight:bold;font-size:18px;color:black;"/>
+        <span style="color:white;font-family:'Monotype Corsiva';font-size:30px;">Captcha Code</span><br /> 
+                <input type="text" style="font-family:'Times New Roman';font-size:22px;font-style:italic;color:blue;width:200px;background:white;padding:5px;" onkeydown="return DisableCopyPaste(event)" onmousedown="return DisableCopyPaste (event)" value=" @ViewBag.code" readonly="true" class="form-control"/>
+                   
+                 
+                    
+           <input type="hidden" value="@ViewBag.code" name="txtccode" />
+       
+           <span style="color:white;font-family:'Monotype Corsiva';font-size:30px;">Currrent Address</span><br />
+        <textarea class="form-control"name="txtaddress"required=""style="font-weight:bold;font-size:18px;color:black;"></textarea> 
+            
+    </div>
+    <div class="col-sm-4"style="background:black;box-shadow:0px 0px 0px black;min-height:500px;opacity:0.5;">
+           <span style="color:white;font-family:'Monotype Corsiva';font-size:30px;">Gender</span>
+        <br />
+        <input type="radio" name="gender" value="Male"required=""/><span style="font-size:25px;color:white">Male</span>
+        <input type="radio" name="gender" value="Female"required=""/><span style="font-size:25px;color:white;">Female</span><br />
+        <span style="color:white;font-family:'Monotype Corsiva';font-size:30px;">Mobile No.</span>
+        <input type="number" placeholder="Enter your Mobile number"class="form-control"name="txtmob"required=""style="font-weight:bold;font-size:18px;color:black;" />
+          <span style="color:white;font-family:'Monotype Corsiva';font-size:30px;">Profile pic</span><br />
+        <input  type="file" name="profile" class="form-control"required="" />
+         <span style="color:white;font-family:'Monotype Corsiva';font-size:30px;">Confirm Password</span>
+        <input id="txtcpass" type="password" class="form-control" required=""style="font-weight:bold;font-size:18px;color:black;"/>
+          <span style="color:white;font-family:'Monotype Corsiva';font-size:30px;">Enter Captcha Code</span>
+                <input type="text" name="txtcaptcha" class="form-control"required=""style="font-weight:bold;font-size:18px;color:black;" />
+    </div>
+    <div class="col-sm-2"></div>
+</div>
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-4"style="opacity:0.5;background:black;box-shadow:0px 0px 0px #ed5858;min-height:70px;">
+        <button type="reset" value="Reset" class="btn btn-danger form-control">Reset</button>
+    </div>
+    
+    <div class="col-sm-4"style="opacity:0.5;background:black;box-shadow:0px 0px 0px black;min-height:70px;">
+        <button type="submit" value="Register Now" @*onclick="checkpass()"*@ class="btn btn-success form-control">Register Now</button>
+        
+        <div class="col-sm-2"></div>
+    </div>
+    </div>
+    </form>
+
+@*<script>
+    function checkpass() {
+        var pass = document.getElementById('txtpass').value;
+        var cpass = document.getElementById('txtcpass').value;
+        if (pass == cpass) {
+
+        }
+        else {
+
+            alert('confirm passowrd incorrect');
+        }
+
+    }
+</script>*@

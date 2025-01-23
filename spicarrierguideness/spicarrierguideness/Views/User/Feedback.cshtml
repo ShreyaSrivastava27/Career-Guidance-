@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Feedback";
+    Layout = "~/Views/Shared/second.cshtml";
+}
+
+<div class="row">
+    <div class="col-sm-2"></div>
+    <form action="/User/Feedback" method="post">
+    <div class="col-sm-8"style="min-height:500px;background:url('/Content/imagesl/bgfd.jpg');
+background-attachment:fixed;background-size:cover;height:auto;border:2px solid black;border-radius:5%;">
+        <h1 style="font-size:40px;font-family:'Monotype Corsiva';color:black;text-align:center;font-weight:bold;">Give us your valuable Feedback</h1><br />
+        <input type="text" class="form-control"placeholder="Enter Title of your Feedback"style="border:2px solid black;"name="txttitle" />
+        <br /><br />
+        <textarea class="form-control" placeholder="Type your Feedback here....."style="border:2px solid black;height:200px;"name="txtfed"></textarea><br />
+        <input type="submit" style="float:right;width:170px;"class="btn btn-success"/>
+        
+    </div></form>
+    <div class="col-sm-2"></div>
+</div>
+<div class="row">
+    <div class="col-sm-12"style="min-height:30px;"></div>
+</div>

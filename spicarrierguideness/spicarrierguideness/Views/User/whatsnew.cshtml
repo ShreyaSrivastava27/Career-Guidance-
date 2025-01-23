@@ -1,0 +1,77 @@
+﻿@{
+    ViewBag.Title = "whatsnew";
+    Layout = "~/Views/Shared/second.cshtml";
+}
+
+<div class="row">
+    <div class="col-sm-12"style="min-height:350px;background:url('../Content/imagesl/backgcomp.jpg');background-repeat:no-repeat;background-attachment:fixed;background-size:cover;padding-top:100px;text-align:center;">
+        <span style="text-align:center;color:white;font-family:'Times New Roman';font-size:60px;font-weight:bold;background:black;opacity:0.5;">Latest News</span>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12"style="min-height:20px;"></div>
+</div>
+<div class="row">
+    <div class="col-sm-12"style="min-height:100px;background:#ed4848;opacity:0.5;color:white;font-size:27px;font-family:'Monotype Corsiva';">
+        
+        <h1 style="padding-top:0px;">Latest News are : </h1>
+         <marquee scrollamount="10"onmouseover="this.stop()"onmouseout="this.start()">
+                      @using spicarrierguideness.Models
+    @{
+        ConnectionManager cm = new ConnectionManager();
+        string command = "select nmsg from tbl_notification";
+                System.Data.DataTable dt = cm.GetBulkRecord(command);
+                if(dt.Rows.Count>0)
+                {
+                    for(int i=0;i<dt.Rows.Count;i++)
+                    {
+                         
+                 
+               <span style="padding-top:25px;">@dt.Rows[i][0].ToString()&nbsp;&nbsp;</span> 
+
+                
+                 
+                                                        
+            
+    }
+    }
+    }
+
+                </marquee>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8"style="min-height:800px;background:white;opacity:0.5;">
+        <h1 style="font-size:28px;color:black;border-bottom:1px solid black;font-family:'Times New Roman';font-weight:bold;">Best Paying Jobs</h1>
+        <h1 style="font-size:26px;color:blue;font-family:'Times New Roman';">Anesthesiologist</h1>
+        <h1 style="font-size:24px;color:black;font-family:'Times New Roman';">Anesthesiologists are the physicians responsible
+             for administering general or regional anesthesia, 
+            which allows surgeons and other physicians to complete invasive procedures with little to no discomfort to the patient.
+</h1>
+        <h1 style="font-size:26px;color:blue;font-family:'Times New Roman';">Surgeon</h1>
+        <h1 style="font-size:24px;color:black;font-family:'Times New Roman';">
+            Surgeons operate on patients who suffer from injuries, diseases or deformities. These professionals can train toward becoming general 
+            surgeons,
+             or they can choose a specialization, such as orthopedic, neurological, cardiovascular and plastic surgery. 
+        </h1>
+        <h1 style="font-size:26px;color:blue;font-family:'Times New Roman';">Obstetrician and Gynecologist</h1>
+       <h1 style="font-size:24px;color:black;font-family:'Times New Roman';"> Obstetricians and gynecologists bring new life into the world and care for the spectrum of
+            women's reproductive health. 
+        Obstetrics is the surgical field that deals in childbirth, whereas gynecology is the field of medicine concerned with women's health,
+         especially their reproductive health. </h1>
+        <h1 style="font-size:28px;color:black;border-bottom:1px solid black;font-weight:bold;font-family:'Times New Roman';">Best Technology Jobs</h1>
+        <h1 style="font-size:26px;color:blue;font-family:'Times New Roman';">Software Developer</h1>
+       <h1 style="font-size:24px;color:black;font-family:'Times New Roman';"> Software developers invent the technologies that we sometimes take for granted every day.</h1>
+        <h1 style="font-size:26px;color:blue;font-family:'Times New Roman';">Information Security Analyst</h1>
+        <h1 style="font-size:24px;color:black;font-family:'Times New Roman';">Information security analysts are the gatekeepers or security guards of information systems.</h1>
+        <h1 style="font-size:26px;color:blue;font-family:'Times New Roman';">IT Manager</h1>
+        <h1 style="font-size:24px;color:black;font-family:'Times New Roman';">Computer and information systems managers, or information technology managers, are the guides who help organizations
+         navigate the always-changing labyrinth that is modern technology.</h1>
+    </div>
+
+    <div class="col-sm-2"></div>
+</div>
+<div class="row">
+    <div class="col-sm-12"style="min-height:30px;"></div>
+</div>
