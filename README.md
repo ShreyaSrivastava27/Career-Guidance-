@@ -45,7 +45,7 @@ Bootstrap: For creating a mobile-first, responsive design.
 Backend:
 SQL Server: For managing and storing user data, posts, feedback, and admin-related information.
 
-Modules:
+<h1>Modules:</h1>
 1. User Module:
 User registration, login, and authentication.
 Discussion board participation (post and reply to questions).
@@ -55,12 +55,13 @@ Feedback submission.
 User management (view, edit, or restrict users).
 Moderation of discussion board content.
 Review and action on feedback.
+
 4. Security Module:
 Password encryption for secure login.
 Session management for user authentication.
 Role-based access control (Admin vs User).
 
-Expected Outcomes:
+<h1>Expected Outcomes:</h1>
 A centralized platform where students can get career-related advice and guidance.
 Enhanced peer-to-peer learning through interactive discussions.
 A user-friendly system for administrators to manage the platform effectively.
