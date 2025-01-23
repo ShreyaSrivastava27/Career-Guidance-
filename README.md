@@ -62,8 +62,9 @@ Session management for user authentication.
 Role-based access control (Admin vs User).
 
 <h1>Expected Outcomes:</h1>
-A centralized platform where students can get career-related advice and guidance.
-Enhanced peer-to-peer learning through interactive discussions.
-A user-friendly system for administrators to manage the platform effectively.
-Improved decision-making among students regarding their career paths.
-
+<ls>
+<li>A centralized platform where students can get career-related advice and guidance.</li>
+<li>Enhanced peer-to-peer learning through interactive discussions.</li>
+<li>A user-friendly system for administrators to manage the platform effectively.</li>
+<li>Improved decision-making among students regarding their career paths.</li>
+</ls>
