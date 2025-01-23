@@ -46,18 +46,19 @@ Backend:
 SQL Server: For managing and storing user data, posts, feedback, and admin-related information.
 
 <h1>Modules:</h1>
-User Module:
-User registration, login, and authentication.
+<h3>User Module:</h3>
+User registration, login, authentication, Edit Profile and change password
 Discussion board participation (post and reply to questions).
 Feedback submission.
 
-Admin Module:
-User management (view, edit, or restrict users).
+<h3>Admin Module:</h3>
+User management (view, edit users).
 Moderation of discussion board content.
 Review and action on feedback.
 
-Security Module:
+<h3>Security Module:</h3>
 Password encryption for secure login.
+Captcha Generator
 Session management for user authentication.
 Role-based access control (Admin vs User).
 
