@@ -51,12 +51,12 @@ User registration, login, and authentication.
 Discussion board participation (post and reply to questions).
 Feedback submission.
 
-3. Admin Module:
+2. Admin Module:
 User management (view, edit, or restrict users).
 Moderation of discussion board content.
 Review and action on feedback.
 
-4. Security Module:
+3. Security Module:
 Password encryption for secure login.
 Session management for user authentication.
 Role-based access control (Admin vs User).
