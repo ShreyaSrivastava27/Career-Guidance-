@@ -1,19 +1,17 @@
 # Career-Guidance-
-Tech used: .NET MVC, HTML, CSS, JavaScript, Bootstrap, SQL <br/>
-Tools use: Visual Studio, MySQL
-Purpose:
+<h1> Purpose:</h1>
 The primary goal of the Career Guidance System is to assist students in making informed decisions about their careers. The platform serves as an interactive discussion board where students can:
-
 Post queries about career paths, exams, universities, etc.
 Answer queries from other users if they possess relevant knowledge.
 The system is divided into two zones:
 
-User Zone: Designed for students to register, manage their profiles, and actively engage in discussions.
-Admin Zone: Facilitates administrators in managing user interactions, content, and feedback efficiently.
-Key Features:
-User Zone:
-Registration and Login:
+<h3>User Zone:</h3> Designed for students to register, manage their profiles, and actively engage in discussions.
+<h3>Admin Zone: </h3>Facilitates administrators in managing user interactions, content, and feedback efficiently.
 
+<h1>Key Features:</h1>
+<h3>User Zone:</h3>
+
+Registration and Login:
 Secure registration for new users.
 Password-protected login functionality.
 Profile Management:
@@ -25,24 +23,23 @@ Discussion Board:
 Post questions and queries.
 Answer others' questions and participate in career-related discussions.
 Feedback Facility:
-
 Users can submit feedback on the platform’s usability and improvements.
-Admin Zone:
-User Management:
 
+<h3>Admin Zone:</h3>
+
+User Management:
 View and manage registered users.
 Delete or restrict users if necessary.
 Content Moderation:
-
 Monitor and manage the content posted in the discussion board.
 Handle flagged posts and queries.
-Feedback Review:
 
+Feedback Review:
 Review and address user feedback.
 Implement changes based on user suggestions.
-Technologies Used:
-Frontend:
 
+<h1>Technologies Used:</h1>
+Frontend:
 ASP.NET MVC Framework: For building scalable, secure, and responsive web applications.
 Bootstrap: For creating a mobile-first, responsive design.
 Backend:
