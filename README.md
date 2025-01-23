@@ -47,20 +47,23 @@ SQL Server: For managing and storing user data, posts, feedback, and admin-relat
 
 <h1>Modules:</h1>
 <h3>User Module:</h3>
-User registration, login, authentication, Edit Profile and change password
-Discussion board participation (post and reply to questions).
-Feedback submission.
+<ls>
+<li>User registration, login, authentication, Edit Profile and change password</li>
+<li>Discussion board participation (post and reply to questions).</li>
+<li>Feedback submission.</li></ls>
 
 <h3>Admin Module:</h3>
-User management (view, edit users).
-Moderation of discussion board content.
-Review and action on feedback.
+<ls>
+<li>User management (view, edit users).</li>
+<li>Moderation of discussion board content.</li>
+<li>Review and action on feedback.</li></ls>
 
 <h3>Security Module:</h3>
-Password encryption for secure login.
-Captcha Generator
-Session management for user authentication.
-Role-based access control (Admin vs User).
+<ls>
+<li>Password encryption for secure login.</li>
+<li>Captcha Generator</li>
+<li>Session management for user authentication.</li>
+<li>Role-based access control (Admin vs User).</li></ls>
 
 <h1>Expected Outcomes:</h1>
 <ls>
