@@ -26,25 +26,24 @@ Answer others' questions and participate in career-related discussions.</li>
 Users can submit feedback on the platform’s usability and improvements.</li>
 </ol>
 <h3>Admin Zone:</h3>
-
-User Management:
+<ol>
+<li>User Management:
 View and manage registered users.
-Delete or restrict users if necessary.
-Content Moderation:
+Delete or restrict users if necessary.</li>
+<li>Content Moderation:
 Monitor and manage the content posted in the discussion board.
-Handle flagged posts and queries.
-
-Feedback Review:
+Handle flagged posts and queries.</li>
+<li>Feedback Review:
 Review and address user feedback.
-Implement changes based on user suggestions.
-
+Implement changes based on user suggestions.</li>
+</ol>
 <h1>Technologies Used:</h1>
-Frontend:
+<ul><li>Frontend:
 ASP.NET MVC Framework: For building scalable, secure, and responsive web applications.
-Bootstrap: For creating a mobile-first, responsive design.
-Backend:
-SQL Server: For managing and storing user data, posts, feedback, and admin-related information.
-
+Bootstrap: For creating a mobile-first, responsive design.</li>
+<li>Backend:
+SQL Server: For managing and storing user data, posts, feedback, and admin-related information.</li>
+</ul>
 <h1>Modules:</h1>
 <h3>User Module:</h3>
 <ls>
