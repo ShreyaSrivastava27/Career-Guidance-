@@ -64,7 +64,7 @@ SQL Server: For managing and storing user data, posts, feedback, and admin-relat
 <li>Session management for user authentication.</li>
 <li>Role-based access control (Admin vs User).</li></ls>
 
-<h1>Expected Outcomes:</h1>
+<h1>Outcomes:</h1>
 <ls>
 <li>A centralized platform where students can get career-related advice and guidance.</li>
 <li>Enhanced peer-to-peer learning through interactive discussions.</li>
