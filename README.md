@@ -5,26 +5,26 @@ Post queries about career paths, exams, universities, etc.
 Answer queries from other users if they possess relevant knowledge.
 The system is divided into two zones:
 
-<h3>User Zone:</h3> Designed for students to register, manage their profiles, and actively engage in discussions.
-<h3>Admin Zone: </h3>Facilitates administrators in managing user interactions, content, and feedback efficiently.
+<h3>User Zone:</h3> 
+Designed for students to register, manage their profiles, and actively engage in discussions.
+<h3>Admin Zone: </h3>
+Facilitates administrators in managing user interactions, content, and feedback efficiently.
 
 <h1>Key Features:</h1>
 <h3>User Zone:</h3>
-
-Registration and Login:
-Secure registration for new users.
-Password-protected login functionality.
-Profile Management:
-
+<ol>
+<li> Registration and Login:
+Secure registration for new users.</li>
+<li>Password-protected login functionality.</li>
+<li>Profile Management:
 Edit profile details.
-Change passwords securely.
-Discussion Board:
-
+Change passwords securely.</li>
+<li>Discussion Board:
 Post questions and queries.
-Answer others' questions and participate in career-related discussions.
-Feedback Facility:
-Users can submit feedback on the platform’s usability and improvements.
-
+Answer others' questions and participate in career-related discussions.</li>
+<li>Feedback Facility:
+Users can submit feedback on the platform’s usability and improvements.</li>
+</ol>
 <h3>Admin Zone:</h3>
 
 User Management:
