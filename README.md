@@ -1,4 +1,4 @@
-# Career-Guidance-
+# Career Guidance Project
 <h1> Purpose:</h1>
 The primary goal of the Career Guidance System is to assist students in making informed decisions about their careers. The platform serves as an interactive discussion board where students can:
 Post queries about career paths, exams, universities, etc.
