@@ -39,8 +39,8 @@ Implement changes based on user suggestions.</li>
 </ol>
 <h1>Technologies Used:</h1>
 <ul><li>Frontend:
-ASP.NET MVC Framework: For building scalable, secure, and responsive web applications.<br>
-Bootstrap: For creating a mobile-first, responsive design.</li>
+ASP.NET MVC Framework- For building scalable and secure web applications.<br>
+Bootstrap- For creating a mobile-first, responsive design.</li>
 <li>Backend:
 SQL Server: For managing and storing user data, posts, feedback, and admin-related information.</li>
 </ul>
